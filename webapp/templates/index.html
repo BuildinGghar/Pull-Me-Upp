@@ -369,153 +369,67 @@
                 <div class="tab-content" id="nav-tabContent">
                    <div class="tab-pane fade active show" id="nav-step1" role="tabpanel">
                       <div class="price-box-wrapper style2">
-                         <div class="price-box">
+
+                        {% for service in women_services %}
+                        <div class="price-box">
                             <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Hair Cutting & Trimming</a></h4>
-                                  <p class="price-box_desc">Our stylists approach every haircut</p>
-                               </div>
-                               <span class="price-box_price">$29</span>
+                                <div class="price-box_content">
+                                    <h4 class="box-title"><a href="#">{{ service.title }}</a></h4>
+                                    <p class="price-box_desc">{{ service.description }}</p>
+                                </div>
+                                <span class="price-box_price">₹{{ service.price }}</span>
                             </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Classic Hair Color</a></h4>
-                                  <p class="price-box_desc">Vibrant colors, finishes</p>
-                               </div>
-                               <span class="price-box_price">$45</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Keep Mustache in Good</a></h4>
-                                  <p class="price-box_desc">Nourish and protect your hair</p>
-                               </div>
-                               <span class="price-box_price">$44</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Blow Dry & Curl</a></h4>
-                                  <p class="price-box_desc">Our stylists take your hair type</p>
-                               </div>
-                               <span class="price-box_price">$66</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Shampoo & Set</a></h4>
-                                  <p class="price-box_desc">Products from reputable brands</p>
-                               </div>
-                               <span class="price-box_price">$76</span>
-                            </div>
-                         </div>
+                        </div>
+                    {% endfor %}
+
+                         
+                        
                       </div>
                    </div>
+
                    <div class="tab-pane fade" id="nav-step2" role="tabpanel">
                       <div class="price-box-wrapper style2">
-                         <div class="price-box">
+
+                        {% for service in men_services %}
+                        <div class="price-box">
                             <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Hair Cutting & Trimming</a></h4>
-                                  <p class="price-box_desc">Our stylists approach every haircut</p>
-                               </div>
-                               <span class="price-box_price">$36</span>
+                                <div class="price-box_content">
+                                    <h4 class="box-title"><a href="#">{{ service.title }}</a></h4>
+                                    <p class="price-box_desc">{{ service.description }}</p>
+                                </div>
+                                <span class="price-box_price">₹{{ service.price }}</span>
                             </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Classic Hair Color</a></h4>
-                                  <p class="price-box_desc">Vibrant colors, finishes</p>
-                               </div>
-                               <span class="price-box_price">$35</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Keep Mustache in Good</a></h4>
-                                  <p class="price-box_desc">Nourish and protect your hair</p>
-                               </div>
-                               <span class="price-box_price">$44</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Blow Dry & Curl</a></h4>
-                                  <p class="price-box_desc">Our stylists take your hair type</p>
-                               </div>
-                               <span class="price-box_price">$20</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Shampoo & Set</a></h4>
-                                  <p class="price-box_desc">Products from reputable brands</p>
-                               </div>
-                               <span class="price-box_price">$56</span>
-                            </div>
-                         </div>
+                        </div>
+                    {% endfor %}
+                         
+                         
                       </div>
                    </div>
                    <div class="tab-pane fade" id="nav-step3" role="tabpanel">
                       <div class="price-box-wrapper style2">
-                         <div class="price-box">
+                        {% for service in kids_services %}
+                        <div class="price-box">
                             <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Hair Cutting & Trimming</a></h4>
-                                  <p class="price-box_desc">Our stylists approach every haircut</p>
-                               </div>
-                               <span class="price-box_price">$26</span>
+                                <div class="price-box_content">
+                                    <h4 class="box-title"><a href="#">{{ service.title }}</a></h4>
+                                    <p class="price-box_desc">{{ service.description }}</p>
+                                </div>
+                                <span class="price-box_price">₹{{ service.price }}</span>
                             </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Classic Hair Color</a></h4>
-                                  <p class="price-box_desc">Vibrant colors, finishes</p>
-                               </div>
-                               <span class="price-box_price">$15</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Keep Mustache in Good</a></h4>
-                                  <p class="price-box_desc">Nourish and protect your hair</p>
-                               </div>
-                               <span class="price-box_price">$34</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Blow Dry & Curl</a></h4>
-                                  <p class="price-box_desc">Our stylists take your hair type</p>
-                               </div>
-                               <span class="price-box_price">$60</span>
-                            </div>
-                         </div>
-                         <div class="price-box">
-                            <div class="price-box_wrapp">
-                               <div class="price-box_content">
-                                  <h4 class="box-title"><a href="price.html">Shampoo & Set</a></h4>
-                                  <p class="price-box_desc">Products from reputable brands</p>
-                               </div>
-                               <span class="price-box_price">$46</span>
-                            </div>
-                         </div>
+                        </div>
+                    {% endfor %}
+                         
                       </div>
                    </div>
                 </div>
+                
              </div>
+             <div class="col-auto d-none d-xl-block">
+               <div class="header-button">
+                  
+                  <a href="price" class="th-btn style3">View More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+               </div>
+            </div>
           </div>
           <div class="col-xl-5 wow fadeInRight">
              <div class="pricing-form">
